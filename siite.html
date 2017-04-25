@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>EunoiaTec.com</title>
+<style>
+ #header
+    {
+        width: 100%;
+        background: #333333;
+        height: 300px;
+        color: #FFFFFF;
+    }
+    #container
+    {
+        color: #000000;
+        height: 450px; 
+	}
+	#pic{
+	height: 400px; 
+	}
+	#side
+	{
+	float:left;
+		width:10%;
+		background-color:#00FFFF;
+		height:450px;
+		color:#0033CC;
+	}
+	#news
+	{
+		float:right;
+		width:10%;
+		background-color:#00FFFF;
+		height:450px;
+		color:#0033CC;
+	}
+    #footer
+    {
+        width: 100%;
+        background: #333333;
+        height: 70px;
+        color: #FFFFFF;
+    }
+	.mySlides {
+	height:300px;
+	display:block;}
+</style>
+</head>
+
+<body>
+<div id="header">
+        <div class="slideshow" yeh chiz>
+		<img class="mySlides" src="15.jpg" style="width:100%">
+  		<img class="mySlides" src="images.jpg" style="width:100%">
+  		<img class="mySlides" src="12.gif" style="width:100%">
+		</div>
+</div>
+<div id="container">
+		<div id="side">
+			<ul>
+			<li><a href="siite.html">Eunoia</a></li>
+			<li><a href="Home.html">Home</a></li>
+			<li><a href="Admission.html">Admission</a></li>
+			<li><a href="Contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div id="news">
+		<b><font size="+2">Latest News</font></b>
+		<p><marquee>
+		Featured Posts
+
+		President & CEO visits beneficiaries of the Education Program in Lalapanzi, Zimbabwe
+		May 16, 2014
+
+		ACFE Group CEO Stanley Ndambakuwa interviewed by Mark Macomber at ACTV, OH. United State
+		</marquee></p>
+		</div>
+		<center>
+		 <img id="pic" src="1.jpg" style="width:50%">
+		</center>
+		</div>
+    <div id="footer">
+        
+© 2017-2020; African Community Fund for Education Group
+Registered in South Africa as a Non-Profit Organisation (NPO) in terms of the Non-Profit Organisations Act 71 of 1997. Reg. No: 123-008 NPO.
+Registered in South Africa as a Public Benefit Organisation (PBO) in terms of Section 30(3) and in terms of section 10(1)(cN) of Act 58 of 1962. Reg No: 930043448
+Approved in terms of Section 18A of the Income Tax Act 58 of 1962. South African Revenue Services. *Auditted by Deloitte & Touche South Africa
+Registered in Zimbabwe as African Community Fund for Education Zimbabwe. Registration Number: MA0000447/2015
+This website is subject to legal information. Privacy Policy, Terms and Conditions, Copyright Notice
+Authorised by: Department of Corporate Affairs, Maintained by: media@acfegroup.org
+		    </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>

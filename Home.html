@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>EunoiaTec.com</title>
+<style>
+ #header
+    {
+        width: 100%;
+        background: #333333;
+        height: 300px;
+        color: #FFFFFF;
+    }
+    #container
+    {
+        color: #000000;
+        height: 450px; 
+	}
+	#side
+	{
+	float:left;
+		width:10%;
+		background-color:#FF00FF;
+		height:450px;
+		color:#0033CC;
+	}
+	#news
+	{
+		float:right;
+		width:10%;
+		background-color:#FF00FF;
+		height:450px;
+		color:#0033CC;
+	}
+    #footer
+    {
+        width: 100%;
+        background: #333333;
+        height: 70px;
+        color: #FFFFFF;
+    }
+	.mySlides {
+	height:300px;
+	display:block;}
+</style>
+</head>
+
+<body>
+<div id="header">
+        <div class="slideshow" yeh chiz>
+		<img class="mySlides" src="a.jpg" style="width:100%">
+  		<img class="mySlides" src="std.jpg" style="width:100%">
+  		<img class="mySlides" src="res.jpg" style="width:100%">
+		</div>
+</div>
+<div id="container">
+		<div id="side">
+			<ul>
+			<li><a href="Home.html">Home</a></li>
+			<li><a href="Admission.html">Admission</a></li>
+			<li><a href="Contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div id="news">
+		<font size="+2">Latest News</font>
+		<p><marquee>
+		Note:
+
+		The Admission of fall 2018 will be start from the 1st january to 25 january From director of comsats of wah cantt
+		</marquee></p>
+		</div>
+		<center>
+		<div id="wsb-element-00000000-0000-0000-0000-000531559066" class="wsb-element-text" data-type="element">
+		 <div class="txt ">
+		 <h2><span style=" font-size: 16px;">
+		 Introduction
+		 </span>
+		 <br>
+		 </h2>
+		 </div> 
+		 </div>
+		<div id="wsb-element-00000000-0000-0000-0000-000531559065" class="wsb-element-text" data-type="element"> 
+		<div class="txt ">
+		<p>
+		<span style="font-size: 16px;">
+		     The COMSATS Institute of Information technology at Wah is a growing institute of IT. Housed in a spacious building at Wah cantonment, the campus provides state-of-the-art facilities for the acquisition of knowledge and skills in the field of IT.
+
+CIIT, in a short span of time, has proven itself to be a world-class university dedicated to creating a knowledge base in the areas of science and technology by proactively participating in scientific research and development. CIIT aims to educate and groom leaders for the 21st century by imparting quality education and training in the field of technology.
+
+CIIT is fully equipped to handle the dynamics of the fast paced IT & Telecom industries and therefore adopts a proactive and flexible approach to anticipate and meet the challenges of future developments on the technological front. The basic function of CIIT is to train the country's human resource in the field of Information Technology so as to equip them to deal effectively with emerging IT trends. CIIT focuses on the delivery of new ideas, products and services through research, development and education. This is being done through a strategic partnership with IT & Telecom organizations in general and IT & Telecom industries in particular.</span><br></p></div> </div>
+		</center>
+</div>
+    <div id="footer">
+       
+<img src="c.jpg" style="width:100%">
+    </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
